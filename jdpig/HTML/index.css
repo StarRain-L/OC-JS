@@ -1,0 +1,80 @@
+body{
+    background-color: #f2f2f2;
+
+}
+
+#content{
+    text-align: center;
+}
+
+#content .panel{
+    background-color: white;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+#content .panel .group input:focus{
+    outline: none;
+
+    border-left-color:#cc865e ;
+}
+/*输入框*/
+#content .panel .group input{
+    display: block;
+    width: 250px;
+    height: 33px;
+    padding-left: 7px;
+    font-size: 15px;
+    border: 1px solid #dddddd;
+
+}
+
+#content .panel .group label{
+    display: block;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+/*登录*/
+#content .login{
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+#content .login button:hover{
+    background-color: white;
+    color: #cc865e;
+    border: 1px solid #dddddd;
+}
+
+#content button{
+    height: 33px;
+    border: 0px;
+    color: white;
+    font-size: 18px;
+}
+
+#content .login button{
+    width: 250px;
+    background-color: #cc865e;
+}
+
+/*注册*/
+#content .reg{
+    margin-top: 20px;
+}
+#content .reg button{
+    width: 200px;
+    background-color: #466baf;
+}
+
+#content .reg button:hover{
+    background-color: white;
+    color: #466baf;
+    border: 1px solid #dddddd;
+}

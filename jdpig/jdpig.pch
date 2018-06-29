@@ -1,0 +1,36 @@
+//
+//  jdpig.pch
+//  jdpig
+//
+//  Created by jr on 2018/5/21.
+//  Copyright © 2018年 jr. All rights reserved.
+//
+
+#ifndef jdpig_h
+#define jdpig_h
+
+
+#endif /* jdpig_h */
+
+// 判断是否为isIphoneX
+#define isIphoneX   CGRectEqualToRect([UIScreen mainScreen].bounds, CGRectMake(0, 0, 375, 812))
+// 判断是否为iPhone6p
+#define iPhone6p ([UIScreen mainScreen].bounds.size.height == 736)
+// 判断是否为iPhone6
+#define iPhone6 ([UIScreen mainScreen].bounds.size.height == 667)
+// 判断是否为iPhone5
+#define iPhone5 ([UIScreen mainScreen].bounds.size.height == 568)
+// 判断是否为iPhone4
+#define iPhone4 ([UIScreen mainScreen].bounds.size.height == 480)
+
+
+// .判断是否为iOS7
+#define iOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] = 7.0)
+// .判断是否为iOS8
+#define iOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+// .判断是否为iOS11
+#define iOS11 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.0)
+
+//获取设备的物理信息
+#define screenHeight    [UIScreen mainScreen].bounds.size.height
+#define screenWidth    [UIScreen mainScreen].bounds.size.width

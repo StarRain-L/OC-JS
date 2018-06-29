@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>登录首页</title>
+    <link href="index.css " rel="stylesheet">
+</head>
+<body>
+<!--最外层-->
+    <div id="content">
+        <!-- 面板-->
+        <div class="panel">
+            <div class="login">
+                <button id="camera" onclick="cameraClick()"> JS 调 OC 方法</button>
+            </div>
+            <div class="login">
+
+            </div>
+        </div>
+        <script >
+           function cameraClick (){
+               alert('alert提示');
+               window.webkit.messageHandlers.Camera.postMessage('js 传给 oc的参数');
+           }
+            //接受原生传值
+            function jsStr(str){
+                alert(str+'成功');
+                console.log('--------');
+            }
+        </script>
+    </div>
+</body>
+</html>
